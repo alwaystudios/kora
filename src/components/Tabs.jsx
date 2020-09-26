@@ -7,7 +7,7 @@ import { Contact } from './tabs/Contact'
 import styled from 'styled-components'
 import { smallScreen } from '../breakpoints'
 import { TabButton } from './TabButton'
-import { COMPANY, LINKS, PRODUCTS, SHOP } from '../App'
+import { COMPANY, LINKS, NEWS, PRODUCTS, SHOP } from '../App'
 
 const Container = styled.div`
   display: flex;
@@ -36,6 +36,7 @@ const Container = styled.div`
 export const Tabs = ({ setTab, tab }) => (
   <Container>
     <div className="tabs">
+      <TabButton setTab={setTab} text={NEWS} current={tab} />
       <TabButton setTab={setTab} text={COMPANY} current={tab} />
       <TabButton setTab={setTab} text={PRODUCTS} current={tab} />
       <TabButton setTab={setTab} text={LINKS} current={tab} />

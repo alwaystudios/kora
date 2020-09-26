@@ -8,6 +8,7 @@ export const COMPANY = 'O Firmie'
 export const PRODUCTS = 'Produkty'
 export const LINKS = 'Linki'
 export const SHOP = 'Sklep'
+export const NEWS = 'Aktualności'
 
 const Container = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ const Container = styled.div`
 `
 
 const App = () => {
-  const [tab, setTab] = useState(COMPANY)
+  const [tab, setTab] = useState(NEWS)
   return (
     <Container>
       <AppHeader />
