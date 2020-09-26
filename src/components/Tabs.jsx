@@ -5,7 +5,7 @@ import { Links } from './tabs/Links'
 import { Shop } from './tabs/Shop'
 import { Contact } from './tabs/Contact'
 import styled from 'styled-components'
-import { mediumScreen, smallScreen } from '../breakpoints'
+import { smallScreen } from '../breakpoints'
 import { TabButton } from './TabButton'
 import { COMPANY, LINKS, PRODUCTS, SHOP } from '../App'
 
@@ -25,16 +25,9 @@ const Container = styled.div`
   > .tab {
     display: flex;
     flex-direction: row;
-    margin: 2rem 10rem 2rem 10rem;
-
-    @media only screen and (max-width: ${mediumScreen}px) {
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
+    justify-content: center;
 
     @media only screen and (max-width: ${smallScreen}px) {
-      margin-right: 1rem;
-      margin-left: 1rem;
       flex-direction: column-reverse;
     }
   }

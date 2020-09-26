@@ -2,10 +2,8 @@ import React from 'react'
 import { Box } from '../Box'
 
 export const Contact = () => (
-  <Box title="Kontakt">
+  <Box title="ZAPRASZAMY DO SKLEPU">
     <p>
-      ZAPRASZAMY DO SKLEPU
-      <br />
       ulica Kościelna 7<br />
       34-400 Nowy Targ
     </p>

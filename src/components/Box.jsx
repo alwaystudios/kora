@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mediumScreen, smallScreen } from '../breakpoints'
 
 const Container = styled.div`
   display: flex;
@@ -10,8 +11,18 @@ const Container = styled.div`
   padding-bottom: 2rem;
   margin: 1rem;
   border-radius: 15px;
-  min-width: 15rem;
+
+  @media only screen and (max-width: ${mediumScreen}px) {
+    min-width: 19rem;
+  }
+
+  @media only screen and (max-width: ${smallScreen}px) {
+    min-width: 0;
+  }
+
   height: fit-content;
+  max-width: 50rem;
+  width: fit-content;
 `
 
 const Title = styled.p`
