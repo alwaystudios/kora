@@ -21,11 +21,11 @@ export const Contact = () => (
       Sobota: 9:00 - 13:00
     </p>
     <p>
-      <b>tel.</b> 018 26 699 47
+      tel <a href="tel:+48 018 26 699 47">+48 018 26 699 47</a>
       <br />
-      +48 606 365 122
+      <a href="tel:+48 606 365 122">+48 606 365 122</a>
       <br />
-      +48 500 210 103
+      <a href="tel:+48 500 210 103">+48 500 210 103</a>
     </p>
     <a href="mailto:kora-nt@pro.onet.pl" target="email">
       email: kora-nt@pro.onet.pl
