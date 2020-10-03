@@ -1,8 +1,12 @@
 import React from 'react'
 import { Box } from '../Box'
+import { FacebookIcon } from 'react-share'
 
 export const Contact = () => (
   <Box title="ZAPRASZAMY DO SKLEPU">
+    <a href="https://www.facebook.com/Kora-Auto-Cze%C5%9Bci-878225795593110/" target="facebook">
+      <FacebookIcon borderRadius={50} size={40} />
+    </a>
     <p>
       ulica Kościelna 7<br />
       34-400 Nowy Targ
