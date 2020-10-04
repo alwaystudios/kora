@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { COMPANY, LINKS, PRODUCTS, SHOP } from '../App'
+import { COMPANY, NEWS, SHOP } from '../App'
 import { FooterLink } from './FooterLink'
 
 const Container = styled.footer`
@@ -15,9 +15,8 @@ const Container = styled.footer`
 export const Footer = ({ setTab }) => {
   return (
     <Container>
+      <FooterLink setTab={setTab} text={NEWS} />
       <FooterLink setTab={setTab} text={COMPANY} />
-      <FooterLink setTab={setTab} text={PRODUCTS} />
-      <FooterLink setTab={setTab} text={LINKS} />
       <FooterLink setTab={setTab} text={SHOP} />
     </Container>
   )

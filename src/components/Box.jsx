@@ -1,28 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { mediumScreen, smallScreen } from '../breakpoints'
+import { smallScreen } from '../breakpoints'
 
 const Container = styled.div`
   display: flex;
   text-align: center;
   flex-direction: column;
+  width: 100%;
   border: 1px solid black;
   padding: 1rem;
   padding-bottom: 2rem;
   margin: 1rem;
   border-radius: 15px;
 
-  @media only screen and (max-width: ${mediumScreen}px) {
-    min-width: 19rem;
-  }
-
   @media only screen and (max-width: ${smallScreen}px) {
-    min-width: 0;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-
-  height: fit-content;
-  max-width: 50rem;
-  width: fit-content;
 `
 
 const Title = styled.p`

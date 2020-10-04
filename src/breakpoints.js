@@ -1,2 +1,2 @@
-export const mediumScreen = 770
-export const smallScreen = 420
+export const mediumScreen = 860
+export const smallScreen = 700

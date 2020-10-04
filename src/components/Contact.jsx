@@ -1,9 +1,37 @@
 import React from 'react'
-import { Box } from '../Box'
 import { FacebookIcon } from 'react-share'
+import styled from 'styled-components'
+import { smallScreen } from '../breakpoints'
+
+const Container = styled.div`
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin: 1rem;
+  border-radius: 15px;
+  max-width: 50rem;
+  height: fit-content;
+  width: fit-content;
+
+  @media only screen and (max-width: ${smallScreen}px) {
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid black;
+  }
+`
+
+const Title = styled.p`
+  font-size: x-large;
+  margin-bottom: 1rem;
+  height: fit-content;
+`
 
 export const Contact = () => (
-  <Box title="ZAPRASZAMY DO SKLEPU">
+  <Container>
+    <Title>ZAPRASZAMY DO SKLEPU</Title>
     <a href="https://www.facebook.com/Kora-Auto-Cze%C5%9Bci-878225795593110/" target="facebook">
       <FacebookIcon borderRadius={50} size={40} />
     </a>
@@ -34,5 +62,5 @@ export const Contact = () => (
     <a href="mailto:kora-nt@pro.onet.pl" target="email">
       email: kora-nt@pro.onet.pl
     </a>
-  </Box>
+  </Container>
 )

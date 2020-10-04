@@ -1,42 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-import { mediumScreen, smallScreen } from '../breakpoints'
+import { COMPANY, NEWS, SHOP } from '../App'
+import { mediumScreen } from '../breakpoints'
+import { MenuButton } from './MenuButton'
 
 const Header = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: #5a91e8;
-
-  > .mobile {
-    display: none;
-  }
+  border: 0.25rem solid #5a91e8;
 
   @media only screen and (max-width: ${mediumScreen}px) {
-    > .car {
-      display: none;
-    }
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: ${smallScreen}px) {
-    > .car {
-      display: none;
-    }
+  > img {
+    border-radius: 5px;
+    margin-right: 5rem;
 
-    > .logo {
-      display: none;
-    }
-
-    > .mobile {
-      display: block;
+    @media only screen and (max-width: ${mediumScreen}px) {
+      margin-right: 0;
     }
   }
 `
 
-export const AppHeader = () => (
+export const AppHeader = ({ setTab, tab }) => (
   <Header>
-    <img className="mobile" src="./kora.png" alt="kora" />
-    <img className="logo" src="./logo.jpg" alt="logo" />
-    <img className="car" src="./car_image.jpg" alt="car_image" />
+    <img src="./kora.png" alt="kora" />
+    <MenuButton setTab={setTab} text={NEWS} current={tab} />
+    <MenuButton setTab={setTab} text={COMPANY} current={tab} />
+    <MenuButton setTab={setTab} text={SHOP} current={tab} />
   </Header>
 )
