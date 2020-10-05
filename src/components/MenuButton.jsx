@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { mediumScreen, smallScreen } from '../breakpoints'
+import { mediumScreen } from '../breakpoints'
 
 const Button = styled.div`
   &: hover {
@@ -11,14 +11,14 @@ const Button = styled.div`
     `${
       current
         ? css`
-            color: white;
-            background-color: #5a91e8;
+            color: #5a91e8;
+            background-color: white;
             &: hover {
-              background-color: #5a91e8;
+              background-color: white;
             }
           `
         : css`
-            background-color: white;
+            background-color: #5a91e8;
           `
     }`}
 
@@ -26,8 +26,6 @@ const Button = styled.div`
   padding: 0.75rem 2rem 0.75rem 2rem;
   width: fit-content;
   font-size: x-large;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
 
   &: focus {
     box-shadow: none;
@@ -38,14 +36,9 @@ const Button = styled.div`
     font-size: large;
     padding: 0.5rem;
   }
-
-  @media only screen and (max-width: ${smallScreen}px) {
-    font-size: small;
-    padding: 0.5rem;
-  }
 `
 
-export const TabButton = ({ text, setTab, current }) => {
+export const MenuButton = ({ text, setTab, current }) => {
   const isCurrent = text === current
   return (
     <Button
