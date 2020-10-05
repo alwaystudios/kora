@@ -1,10 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Box } from './Box'
-
-const P = styled.p`
-  text-align: start;
-`
+import { P } from './Core'
 
 export const Company = () => (
   <Box title="Samochody to nasza pasja">
