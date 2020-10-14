@@ -10,7 +10,7 @@ const Container = styled.div`
   color: #999999;
   background-color: #ffffff;
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
 
   & a {
     padding: 0.5rem;

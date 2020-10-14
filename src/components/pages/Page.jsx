@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
-  text-align: center;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
 `
 

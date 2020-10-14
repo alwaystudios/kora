@@ -14,7 +14,7 @@ const Button = styled.div`
   overflow: hidden;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-bottom: 1px solid #5a91e8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   &: focus {
     box-shadow: none;

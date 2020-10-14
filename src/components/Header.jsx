@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Links } from './Links'
 import { Menu } from './Menu'
+import { OpeningTimes } from './OpeningTimes'
 
 const Header = styled.header`
   display: flex;
@@ -13,7 +14,7 @@ const Header = styled.header`
 `
 
 const Container = styled.div`
-  margin: 2rem;
+  margin: 1.5rem;
 `
 
 const Title = styled.div`
@@ -36,5 +37,6 @@ export const AppHeader = ({ setTab }) => (
     </Container>
     <Menu setTab={setTab} />
     <Links />
+    <OpeningTimes />
   </Header>
 )
