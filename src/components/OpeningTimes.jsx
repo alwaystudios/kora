@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   color: #585858;
-  background-color: #dcdcdc;
+  background-color: #f5f5f5;
   width: 100%;
   align-items: center;
   padding: 1rem;

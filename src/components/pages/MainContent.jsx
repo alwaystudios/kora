@@ -6,7 +6,8 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 `
 
 const Title = styled.div`
@@ -14,7 +15,7 @@ const Title = styled.div`
   margin-bottom: 1rem;
 `
 
-export const Page = ({ title, children }) => (
+export const MainContent = ({ title, children }) => (
   <Container>
     <Title>{title}</Title>
     {children}

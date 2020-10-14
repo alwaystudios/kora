@@ -1,10 +1,10 @@
 import React from 'react'
 import { SHOP } from '../../App'
 import { Img } from '../Img'
-import { Page } from './Page'
+import { MainContent } from './MainContent'
 
 export const Shop = () => (
-  <Page title={SHOP}>
+  <MainContent title={SHOP}>
     <Img src="./car2.jpeg" alt="car" />
-  </Page>
+  </MainContent>
 )
