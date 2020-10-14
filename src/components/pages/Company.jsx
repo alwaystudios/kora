@@ -1,8 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Img } from '../Img'
 import { MainContent } from './MainContent'
 
 export const Company = () => (
   <MainContent title="Samochody to nasza pasja">
+    <img
+      style={{
+        objectFit: 'cover',
+        width: '80%',
+        overflow: 'hidden',
+        maxHeight: '200px',
+        marginBottom: '1rem',
+      }}
+      src="./shop_photo.jpg"
+      alt="shop"
+    />
     <div className="para">
       Sklep motoryzacyjny Kora to rodzinna firma z długoletnią tradycją. Naszym celem jest
       zapewnienie klientom doskonałej obsługi, a dzięki ponad 40-letniemu doświadczeniu czujemy, że
@@ -19,6 +32,7 @@ export const Company = () => (
       artykuły w najniższych cenach, możliwe do odebrania osobiście lub wysłania w dowolne miejsce
       Polski.
     </div>
+    <Img src="./car2.jpeg" alt="car" />
     <div style={{ fontSize: 'xx-large' }}>Posiadamy w stałej sprzedaży:</div>
     <ul style={{ textAlign: 'left' }}>
       <li>części eksploatacyjne /filtry</li>
