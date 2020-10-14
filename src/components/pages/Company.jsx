@@ -1,26 +1,25 @@
 import React from 'react'
-import { Box } from './Box'
-import { P } from './Core'
+import { Page } from './Page'
 
 export const Company = () => (
-  <Box title="Samochody to nasza pasja">
-    <P>
+  <Page title="amochody to nasza pasja">
+    <div>
       Sklep motoryzacyjny Kora to rodzinna firma z długoletnią tradycją. Naszym celem jest
       zapewnienie klientom doskonałej obsługi, a dzięki ponad 40-letniemu doświadczeniu czujemy, że
       jesteśmy w stanie to zapewnić. Właściciel sklepu, mgr. inż Zbigniew Ptaś, dba o bezpośredni
       kontakt z odbiorcą, gwarantuje fachową obsługę i służy rzetelną informacją.
-    </P>
-    <P>
+    </div>
+    <div>
       Oferujemy szeroką gamę części zamiennych do samochodów eksploatacyjnych, jak i silnikowych.
       Serdecznie zapraszamy do współpracy zarówno warsztaty, stacje obsługi, jak i klientów
       detalicznych.
-    </P>
-    <P>
+    </div>
+    <div>
       Warto zaglądnąć na naszą zakładkę Sklep Online (Allegro), gdzie oferujemy najciekawsze
       artykuły w najniższych cenach, możliwe do odebrania osobiście lub wysłania w dowolne miejsce
       Polski.
-    </P>
-    <P>
+    </div>
+    <div>
       Posiadamy w stałej sprzedaży:
       <ul>
         <li>części eksploatacyjne /filtry</li>
@@ -39,6 +38,6 @@ export const Company = () => (
         <li>zderzaki</li>
         <li>oleje, smary i plyny chłodnicze, oraz wiele wiele innych produktów</li>
       </ul>
-    </P>
-  </Box>
+    </div>
+  </Page>
 )

@@ -1,31 +1,20 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { mediumScreen } from '../breakpoints'
 
 const Button = styled.div`
   &: hover {
-    background-color: lightgray;
+    border-bottom: 1px solid #ffffff;
   }
 
-  ${({ current }) =>
-    `${
-      current
-        ? css`
-            color: #5a91e8;
-            background-color: white;
-            &: hover {
-              background-color: white;
-            }
-          `
-        : css`
-            background-color: #5a91e8;
-          `
-    }`}
-
   cursor: pointer;
-  padding: 0.75rem 2rem 0.75rem 2rem;
-  width: fit-content;
-  font-size: x-large;
+  font-size: large;
+  font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid #5a91e8;
+  margin-bottom: 1.5rem;
 
   &: focus {
     box-shadow: none;
@@ -33,21 +22,16 @@ const Button = styled.div`
   }
 
   @media only screen and (max-width: ${mediumScreen}px) {
-    font-size: large;
-    padding: 0.5rem;
+    font-size: small;
   }
 `
 
-export const MenuButton = ({ text, setTab, current }) => {
-  const isCurrent = text === current
-  return (
-    <Button
-      current={isCurrent}
-      onClick={() => {
-        setTab(text)
-      }}
-    >
-      {text}
-    </Button>
-  )
-}
+export const MenuButton = ({ text, setTab }) => (
+  <Button
+    onClick={() => {
+      setTab(text)
+    }}
+  >
+    {text}
+  </Button>
+)

@@ -10,6 +10,8 @@ const Container = styled.footer`
   margin-bottom: 2rem;
   border-top: 1px solid black;
   justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
 `
 
 export const Footer = ({ setTab }) => {
