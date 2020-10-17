@@ -1,5 +1,5 @@
 import { FacebookIcon } from '@alwaystudios/as-ui-components'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 `
 
-export const Links = () => (
+export const Links: FunctionComponent = () => (
   <Container>
     <a href="tel:+48 018 26 699 47">
       <img

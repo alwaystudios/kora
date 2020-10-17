@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ const Container = styled.div`
   line-height: 1.5;
 `
 
-export const OpeningTimes = () => (
+export const OpeningTimes: FunctionComponent = () => (
   <Container>
     <div style={{ fontSize: 'x-large' }}>Zapraszamy do sklepu</div>
     <b>czynne:</b>

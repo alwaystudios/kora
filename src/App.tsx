@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import styled from 'styled-components'
 import { Footer } from './components/Footer'
 import { AppHeader } from './components/Header'
@@ -15,7 +15,7 @@ const Container = styled.div`
   font-family: sans-serif;
 `
 
-const App = () => {
+const App: FunctionComponent = () => {
   const [tab, setTab] = useState(NEWS)
   return (
     <Container>
