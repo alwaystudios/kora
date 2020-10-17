@@ -1,2 +1,2 @@
-export const mediumScreen = 860
-export const smallScreen = 700
+export const tablet = 1024
+export const mobile = 480

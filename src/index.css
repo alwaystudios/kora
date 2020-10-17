@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
 .para {
   display: flex;
   flex-direction: column;
