@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { Footer } from './components/Footer'
+import { AppHeader } from './components/Header'
+import { Content } from './components/Content'
 
-function App() {
+export const COMPANY = 'o firmie'
+export const SHOP = 'sklep online'
+export const NEWS = 'aktualności'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: sans-serif;
+`
+
+const App = () => {
+  const [tab, setTab] = useState(NEWS)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <AppHeader setTab={setTab} />
+      <Content tab={tab} />
+      <Footer setTab={setTab} />
+    </Container>
+  )
 }
 
-export default App;
+export default App
