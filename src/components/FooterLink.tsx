@@ -1,5 +1,7 @@
-import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
+import React, { FunctionComponent } from 'react'
+import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
+import { changeTab } from '../redux/actions'
 
 const Container = styled.div`
   margin: 0.8rem;
@@ -12,10 +14,10 @@ const Container = styled.div`
 `
 
 type Props = {
-  setTab: Dispatch<SetStateAction<string>>
   text: string
 }
 
-export const FooterLink: FunctionComponent<Props> = ({ setTab, text }) => {
-  return <Container onClick={() => setTab(text)}>{text}</Container>
+export const FooterLink: FunctionComponent<Props> = ({ text }) => {
+  const dispatch = useDispatch()
+  return <Container onClick={() => dispatch(changeTab(text))}>{text}</Container>
 }

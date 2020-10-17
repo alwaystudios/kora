@@ -1,6 +1,6 @@
-import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
+import React, { FunctionComponent } from 'react'
 import { MenuButton } from './MenuButton'
-import { COMPANY, NEWS, SHOP } from '../App'
+import { COMPANY, NEWS, SHOP } from './pages'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -9,14 +9,10 @@ const Container = styled.div`
   flex-wrap: no-wrap;
 `
 
-type Props = {
-  setTab: Dispatch<SetStateAction<string>>
-}
-
-export const Menu: FunctionComponent<Props> = ({ setTab }) => (
+export const Menu: FunctionComponent = () => (
   <Container>
-    <MenuButton setTab={setTab} text={NEWS} />
-    <MenuButton setTab={setTab} text={COMPANY} />
-    <MenuButton setTab={setTab} text={SHOP} />
+    <MenuButton text={NEWS} />
+    <MenuButton text={COMPANY} />
+    <MenuButton text={SHOP} />
   </Container>
 )

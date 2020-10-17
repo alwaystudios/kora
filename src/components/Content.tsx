@@ -1,17 +1,18 @@
 import React, { FunctionComponent } from 'react'
-import { COMPANY, NEWS, SHOP } from '../App'
+import { useSelector } from 'react-redux'
+import { getCurrentTab } from '../redux/selectors'
+import { COMPANY, NEWS, SHOP } from './pages'
 import { Company } from './pages/Company'
 import { News } from './pages/News'
 import { Shop } from './pages/Shop'
 
-type Props = {
-  tab: string
+export const Content: FunctionComponent = () => {
+  const currentTab = useSelector(getCurrentTab)
+  return (
+    <>
+      {currentTab === NEWS && <News />}
+      {currentTab === COMPANY && <Company />}
+      {currentTab === SHOP && <Shop />}
+    </>
+  )
 }
-
-export const Content: FunctionComponent<Props> = ({ tab }) => (
-  <>
-    {tab === NEWS && <News />}
-    {tab === COMPANY && <Company />}
-    {tab === SHOP && <Shop />}
-  </>
-)

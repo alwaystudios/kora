@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { SHOP } from '../../App'
+import { SHOP } from '.'
 import { Img } from '../Img'
 import { MainContent } from './MainContent'
 

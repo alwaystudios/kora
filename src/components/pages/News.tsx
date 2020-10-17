@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { NEWS } from '../../App'
+import { NEWS } from '.'
 import { Img } from '../Img'
 import { MainContent } from './MainContent'
 

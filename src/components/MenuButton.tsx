@@ -1,6 +1,8 @@
-import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
+import React, { FunctionComponent } from 'react'
+import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import { mediumScreen } from '../breakpoints'
+import { changeTab } from '../redux/actions'
 
 const Button = styled.div`
   &: hover {
@@ -27,16 +29,18 @@ const Button = styled.div`
 `
 
 type Props = {
-  setTab: Dispatch<SetStateAction<string>>
   text: string
 }
 
-export const MenuButton: FunctionComponent<Props> = ({ text, setTab }) => (
-  <Button
-    onClick={() => {
-      setTab(text)
-    }}
-  >
-    {text}
-  </Button>
-)
+export const MenuButton: FunctionComponent<Props> = ({ text }) => {
+  const dispatch = useDispatch()
+  return (
+    <Button
+      onClick={() => {
+        dispatch(changeTab(text))
+      }}
+    >
+      {text}
+    </Button>
+  )
+}
