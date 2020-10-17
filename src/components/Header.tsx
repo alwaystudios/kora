@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
 import styled from 'styled-components'
 import { Links } from './Links'
 import { Menu } from './Menu'
@@ -29,7 +29,11 @@ const SubTitle = styled.div`
   font-style: italic;
 `
 
-export const AppHeader = ({ setTab }) => (
+type Props = {
+  setTab: Dispatch<SetStateAction<string>>
+}
+
+export const AppHeader: FunctionComponent<Props> = ({ setTab }) => (
   <Header>
     <Container>
       <Title>KORA</Title>

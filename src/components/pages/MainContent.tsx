@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -15,7 +15,11 @@ const Title = styled.div`
   margin-bottom: 1rem;
 `
 
-export const MainContent = ({ title, children }) => (
+type Props = {
+  title: string
+}
+
+export const MainContent: FunctionComponent<Props> = ({ title, children }) => (
   <Container>
     <Title>{title}</Title>
     {children}

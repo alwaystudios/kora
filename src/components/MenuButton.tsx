@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
 import styled from 'styled-components'
 import { mediumScreen } from '../breakpoints'
 
@@ -26,7 +26,12 @@ const Button = styled.div`
   }
 `
 
-export const MenuButton = ({ text, setTab }) => (
+type Props = {
+  setTab: Dispatch<SetStateAction<string>>
+  text: string
+}
+
+export const MenuButton: FunctionComponent<Props> = ({ text, setTab }) => (
   <Button
     onClick={() => {
       setTab(text)

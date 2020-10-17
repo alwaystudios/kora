@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
 import styled from 'styled-components'
 import { COMPANY, NEWS, SHOP } from '../App'
 import { FooterLink } from './FooterLink'
@@ -14,7 +14,11 @@ const Container = styled.footer`
   overflow: hidden;
 `
 
-export const Footer = ({ setTab }) => {
+type Props = {
+  setTab: Dispatch<SetStateAction<string>>
+}
+
+export const Footer: FunctionComponent<Props> = ({ setTab }) => {
   return (
     <Container>
       <FooterLink setTab={setTab} text={NEWS} />

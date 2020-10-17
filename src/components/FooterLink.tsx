@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Dispatch, FunctionComponent, SetStateAction } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -11,6 +11,11 @@ const Container = styled.div`
   }
 `
 
-export const FooterLink = ({ setTab, text }) => {
+type Props = {
+  setTab: Dispatch<SetStateAction<string>>
+  text: string
+}
+
+export const FooterLink: FunctionComponent<Props> = ({ setTab, text }) => {
   return <Container onClick={() => setTab(text)}>{text}</Container>
 }

@@ -1,5 +1,5 @@
+import { FacebookIcon } from '@alwaystudios/as-ui-components'
 import React from 'react'
-import { FacebookIcon } from 'react-share'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -45,7 +45,7 @@ export const Links = () => (
       />
     </a>
     <a href="https://www.facebook.com/Kora-Auto-Cze%C5%9Bci-878225795593110/" target="facebook">
-      <FacebookIcon borderRadius={50} size={40} />
+      <FacebookIcon size="40px" />
     </a>
     <a href="mailto:kora-nt@pro.onet.pl" target="email">
       <img

@@ -19,7 +19,7 @@ const App = () => {
   const [tab, setTab] = useState(NEWS)
   return (
     <Container>
-      <AppHeader setTab={setTab} tab={tab} />
+      <AppHeader setTab={setTab} />
       <Content tab={tab} />
       <Footer setTab={setTab} />
     </Container>
