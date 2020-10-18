@@ -17,10 +17,10 @@ export const OpeningTimes: FunctionComponent = () => (
     <div style={{ fontSize: 'x-large' }}>Zapraszamy do sklepu</div>
     <b>czynne:</b>
     <div>
-      <b>Pon - Pt:</b> 8:00-17:00
+      <b>Pon - Pt:</b> 9:00-17:00
     </div>
     <div>
-      <b>Sobota:</b> 9:00 - 13:00
+      <b>Sobota:</b> 9:00 - 15:00
     </div>
   </Container>
 )

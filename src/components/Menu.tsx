@@ -11,8 +11,8 @@ const Container = styled.div`
 
 export const Menu: FunctionComponent = () => (
   <Container>
-    <MenuButton text={NEWS} />
     <MenuButton text={COMPANY} />
+    <MenuButton text={NEWS} />
     <MenuButton text={SHOP} />
   </Container>
 )

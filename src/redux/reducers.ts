@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import { NEWS } from '../tabs'
+import { COMPANY } from '../tabs'
 import { CHANGE_TAB } from './actions'
 
 const initialState = {
-  currentTab: NEWS,
+  currentTab: COMPANY,
 }
 
 export const tabs = (state = initialState, action: any) => {
