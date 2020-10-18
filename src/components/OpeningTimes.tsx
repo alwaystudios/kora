@@ -15,9 +15,9 @@ const Container = styled.div`
 export const OpeningTimes: FunctionComponent = () => (
   <Container>
     <div style={{ fontSize: 'x-large' }}>Zapraszamy do sklepu</div>
-    <b>czynne:</b>
+    <div>Ul. Kościelna 7, 34-400 Nowy Targ</div>
     <div>
-      <b>Pon - Pt:</b> 9:00-17:00
+      <b>Czynne: Pon - Pt:</b> 9:00-17:00
     </div>
     <div>
       <b>Sobota:</b> 9:00 - 15:00
