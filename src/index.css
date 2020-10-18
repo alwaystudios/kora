@@ -18,12 +18,3 @@ code {
   overflow-x: hidden;
   font-family: sans-serif;
 }
-
-.para {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem 1rem 1rem;
-  text-align: center;
-  font-size: x-large;
-  font-weight: 100;
-}

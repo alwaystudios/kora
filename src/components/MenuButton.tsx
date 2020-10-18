@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import { tablet } from '../breakpoints'
+import { mobile } from '../breakpoints'
 import { changeTab } from '../redux/actions'
 
 const Button = styled.div`
@@ -23,8 +23,8 @@ const Button = styled.div`
     outline: black;
   }
 
-  @media only screen and (max-width: ${tablet}px) {
-    font-size: small;
+  @media only screen and (max-width: ${mobile}px) {
+    font-size: medium;
   }
 `
 
