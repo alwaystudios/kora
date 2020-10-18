@@ -6,8 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin: 1.5rem 5rem 2rem 5rem;
 `
 
 const Title = styled.div`
@@ -19,7 +18,7 @@ type Props = {
   title: string
 }
 
-export const MainContent: FunctionComponent<Props> = ({ title, children }) => (
+export const PageContent: FunctionComponent<Props> = ({ title, children }) => (
   <Container>
     <Title>{title}</Title>
     {children}

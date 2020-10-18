@@ -1,9 +1,8 @@
 import React, { FunctionComponent } from 'react'
-import { Img } from '../Img'
-import { MainContent } from './MainContent'
+import { PageContent } from '../components/PageContent'
 
 export const Company: FunctionComponent = () => (
-  <MainContent title="Samochody to nasza pasja">
+  <PageContent title="Samochody to nasza pasja">
     <img
       style={{
         objectFit: 'cover',
@@ -31,8 +30,10 @@ export const Company: FunctionComponent = () => (
       artykuły w najniższych cenach, możliwe do odebrania osobiście lub wysłania w dowolne miejsce
       Polski.
     </div>
-    <Img src="./car2.jpeg" alt="car" />
-    <div style={{ fontSize: 'xx-large' }}>Posiadamy w stałej sprzedaży:</div>
+    <img style={{ width: 'fit-content' }} src="./car2.jpeg" alt="car" />
+    {/* <div className="para" style={{ fontSize: 'xx-large' }}>
+      Posiadamy w stałej sprzedaży:
+    </div>
     <ul style={{ textAlign: 'left' }}>
       <li>części eksploatacyjne /filtry</li>
       <li>klocki</li>
@@ -49,6 +50,6 @@ export const Company: FunctionComponent = () => (
       <li>oświetlenie </li>
       <li>zderzaki</li>
       <li>oleje, smary i plyny chłodnicze, oraz wiele wiele innych produktów</li>
-    </ul>
-  </MainContent>
+    </ul> */}
+  </PageContent>
 )

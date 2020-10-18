@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { MenuButton } from './MenuButton'
-import { COMPANY, NEWS, SHOP } from './pages'
+import { COMPANY, NEWS, SHOP } from '../tabs'
 import styled from 'styled-components'
 
 const Container = styled.div`

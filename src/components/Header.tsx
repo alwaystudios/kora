@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
-import { Links } from './Links'
+import { Contact } from './Contact'
 import { Menu } from './Menu'
 import { OpeningTimes } from './OpeningTimes'
 
@@ -36,7 +36,7 @@ export const AppHeader: FunctionComponent = () => (
       <SubTitle>sklep autoczesci</SubTitle>
     </Container>
     <Menu />
-    <Links />
+    <Contact />
     <OpeningTimes />
   </Header>
 )

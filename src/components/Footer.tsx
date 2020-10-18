@@ -1,23 +1,23 @@
 import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
-import { COMPANY, NEWS, SHOP } from './pages'
-import { FooterLink } from './FooterLink'
+import { Menu } from './Menu'
 
 const Container = styled.footer`
   display: flex;
   flex-direction: row;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid black;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   justify-content: center;
   white-space: nowrap;
   overflow: hidden;
+  color: #ffffff;
+  background-color: #5a91e8;
+  border-top: 1px solid #000000;
 `
 
 export const Footer: FunctionComponent = () => (
   <Container>
-    <FooterLink text={NEWS} />
-    <FooterLink text={COMPANY} />
-    <FooterLink text={SHOP} />
+    <Menu />
   </Container>
 )

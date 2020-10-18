@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { NEWS } from '../components/pages'
+import { NEWS } from '../tabs'
 import { CHANGE_TAB } from './actions'
 
 const initialState = {
