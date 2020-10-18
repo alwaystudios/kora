@@ -18,7 +18,7 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-  font-size: xxx-large;
+  font-size: 60px;
   font-weight: 200;
   text-shadow: 2px 2px gray;
   text-align: center;
