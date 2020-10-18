@@ -1,20 +1,20 @@
 import React, { FunctionComponent } from 'react'
+import styled from 'styled-components'
 import { PageContent } from '../components/PageContent'
 import { Para } from '../components/Para'
 
+const Img = styled.img`
+  width: 100%;
+  overflow: hidden;
+  max-height: 200px;
+  object-fit: cover;
+`
+
 export const Company: FunctionComponent = () => (
   <PageContent title="Samochody to nasza pasja">
-    <img
-      style={{
-        objectFit: 'cover',
-        width: '80%',
-        overflow: 'hidden',
-        maxHeight: '200px',
-        marginBottom: '1rem',
-      }}
-      src="./shop_photo.jpg"
-      alt="shop"
-    />
+    <div style={{ marginBottom: '1rem' }}>
+      <Img src="./shop_photo.jpg" alt="shop" />
+    </div>
     <Para>
       Sklep motoryzacyjny Kora to rodzinna firma z długoletnią tradycją. Naszym celem jest
       zapewnienie klientom doskonałej obsługi, a dzięki ponad 40-letniemu doświadczeniu czujemy, że

@@ -10,7 +10,7 @@ const Container = styled.div`
   margin: 1.5rem 5rem 2rem 5rem;
 
   @media only screen and (max-width: ${mobile}px) {
-    margin: 1.5rem 1rem 2rem 1rem;
+    margin: 1.5rem 0 2rem 0;
   }
 `
 

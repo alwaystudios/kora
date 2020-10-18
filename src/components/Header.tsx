@@ -21,19 +21,21 @@ const Title = styled.div`
   font-size: xxx-large;
   font-weight: 200;
   text-shadow: 2px 2px gray;
+  text-align: center;
 `
 
 const SubTitle = styled.div`
   font-size: large;
   font-weight: 400;
   font-style: italic;
+  text-align: center;
 `
 
 export const AppHeader: FunctionComponent = () => (
   <Header>
     <Container>
       <Title>KORA</Title>
-      <SubTitle>sklep autoczesci</SubTitle>
+      <SubTitle>Sklep motoryzacyjny - auto części</SubTitle>
     </Container>
     <Menu />
     <Contact />
