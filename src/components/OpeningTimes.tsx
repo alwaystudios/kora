@@ -20,7 +20,7 @@ export const OpeningTimes: FunctionComponent = () => (
       <b>Czynne: Pon - Pt:</b> 9:00-17:00
     </div>
     <div>
-      <b>Sobota:</b> 9:00 - 15:00
+      <b>Sobota:</b> nieczynne od 1-ego sierpnia 2024
     </div>
     <div style={{ textAlign: 'center' }}>
       <b>Telefon:</b> <a href="tel:+48 018 2669947">018 2669947</a> /{' '}
