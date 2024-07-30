@@ -24,7 +24,7 @@ export const OpeningTimes: FunctionComponent = () => (
     </div>
     <div style={{ textAlign: 'center' }}>
       <b>Telefon:</b> <a href="tel:+48 018 2669947">018 2669947</a> /{' '}
-      <a href="tel:+48 606365122">606365122</a> / <a href="tel:+48 500210103">500210103</a>
+      <a href="tel:+48 606365122">606365122</a>
     </div>
   </Container>
 )
